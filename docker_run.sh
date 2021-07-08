@@ -1,0 +1,14 @@
+docker run --name gcpdb \
+ -p 8900:3306 \
+ -v /etc/localtime:/etc/localtime:ro \
+ -v /root/gcp_proJect/mysql/datadir:/var/lib/mysql \
+ -e MYSQL_ROOT_PASSWORD=secure \
+ -h sgdb \
+ -d mariadb:10.3 \
+ --collation-server=utf8_general_ci \
+ --character-set-server=utf8 \
+ --skip-character-set-client-handshake \
+ --innodb_data_file_path=ibdata1:10M:autoextend:max:10G \
+ --max_connections=500 \
+ --innodb_lock_wait_timeout=240 \
+ --transaction-isolation=READ-COMMITTED

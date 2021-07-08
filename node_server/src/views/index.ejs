@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tell Me What I’m Remembering</title>
+    <meta name="description" content="Google Cloud Speech Recognition with Node and Socket.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+	<link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
+	<link rel="shortcut icon" href="#">
+</head>
+
+
+<body>
+
+	<!-- <h1>Tell Me What I’m Remembering</h1> -->
+    <div class="wrapper">
+        <audio></audio>
+		
+		<div id="text_area" >
+			<!-- <div id="recordingStatus">&nbsp;</div>  -->
+            <p id="ResultText">
+                <span class="greyText">No Speech to Text yet<span>
+            </p>
+			<!-- <div id='button_area'>
+				<button id="startRecButton" class='child_button' type="button"></button>
+				<button id="resetButton" class='child_button' type="button"></button>
+            </div> -->
+			
+        </div>
+        <div id='button_area'>
+            <button id="startRecButton" class='child_button' type="button"></button>
+            <button id="resetButton" class='child_button' type="button"></button>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- Socket -->
+    <script src="assets/js/socket.io.js"></script>
+
+    <!-- Client -->
+    <script src="assets/js/client.js"></script>
+	
+	<!-- Client -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Client Loading-->
+    <script src="assets/js/loading.js"></script>
+</body>
+
+</html>
