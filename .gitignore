@@ -1,0 +1,19 @@
+#audio file
+*.pcm
+*.wav
+node_server/src/audio
+
+#key file / env file
+*.key
+*.crt
+*.env
+*db.json
+google_api.json
+
+
+#mysql dir
+mysql/
+node_server/key
+
+#node
+node_server/node_modules

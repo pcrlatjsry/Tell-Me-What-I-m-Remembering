@@ -1,6 +1,0 @@
-#log 
-*.log
-
-#key folder
-gcp_project/key
-*.key
